@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Cadastro - Jogo da Memória - UPF</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Shauna Danadinha">
+		<meta name="description" content="Jogo da Memória - UPF - Shauna Danadinha">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/memoria.css">
+		<link rel="stylesheet" href="css/button.css">
+		<link rel="stylesheet" href="css/relogio.css">
+	</head>
+	<body>
+		<header class="container">
+			<div class="content-min">
+				<div class="row">
+					<div class="col" style="text-align: center;">
+						<h1>Jogo da Memória</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="bg-black">
+			<div class="jogodamemoria">
+				<div id="timerContainer">
+					<div class="timer">Clique em INICIAR para começar o jogo!</div>
+				</div>
+				<div class="feedbacktentativas"></div><br>
+				<div class="feedbacktentativastempo"></div><br>
+				<div>
+					<div id="element1" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 1"><div data-value="0" class="backface"></div></div>
+					<div id="element2" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 2"><div data-value="0" class="backface"></div></div>
+					<div id="element3" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 3"><div data-value="0" class="backface"></div></div>
+					<div id="element4" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 4"><div data-value="0" class="backface"></div></div>
+				</div>
+				<div>
+					<div id="element5" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 5"><div data-value="0" class="backface"></div></div>
+					<div id="element6" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 6"><div data-value="0" class="backface"></div></div>
+					<div id="element7" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 7"><div data-value="0" class="backface"></div></div>
+					<div id="element8" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 8"><div data-value="0" class="backface"></div></div>
+				</div>
+				<div>
+					<div id="element9" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 9"><div data-value="0" class="backface"></div></div>
+					<div id="element10" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 10"><div data-value="0" class="backface"></div></div>
+					<div id="element11" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 11"><div data-value="0" class="backface"></div></div>
+					<div id="element12" class="elements pointernone" onclick="viracarta(this)"><img draggable="false" src="img/mastery.png" alt="Card 12"><div data-value="0" class="backface"></div></div>
+				</div>
+				<div class="site-space-5"></div>
+				<div class="button-left">
+					<button id="botaoresetar" class="big-button" onclick="resetTimer(); salvacartas(); girapecas('trava'); escondebotao('nao'); flagdupla = 1;">REINICIAR</button>
+				</div>
+				<div class="button-right">
+					<button id="botaoiniciar" class="big-button" onclick="startTimer(); girapecas(); escondebotao('sim');">INICIAR</button>
+				</div>
+				<div class="site-space-6-no-pc"></div>
+			</div>
+		</main>
+		<footer class="bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="content">
+						<div class="col text-center" style="line-height: 1.6em">
+							<a href="https://mail.google.com/mail/?view=cm&fs=1&to=169481@upf.br" target="_blank"><h4>Daniel M - 169481@upf.br</h4></a>
+							<p>© Jogo da Memória - Daniel M</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="js/memoria.js"></script>
+<script src="js/relogio.js"></script>
